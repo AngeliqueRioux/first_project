@@ -9,28 +9,48 @@
     <title>Fantasy-fantastique</title>
 </head>
 
-<body class="index">
+<body id="index" class="index">
     <nav id="navBar" class="navbar" role="navigation">
         <div class="logo">
             <img src="./assets/images/logo.png" alt="imageLogo">
+            <div class="mode" onclick="myFunction()"></div>
+
         </div>
-        <ul class="nav-ul">
-            <li class="link"><a href="index.html">Accueil</a></li>
-            <li class="link"><a href="personnages.html">Personnages</a></li>
-            <li class="link"><a href="monde.html">Mondes</a></li>
-            <li class="link"><a href="magie.html">Magie</a></li>
-            <li class="link"><a href="histoire.html">L'histoire</a></li>
-            <li class="link"><a href="contact.html">contact</a></li>
-        </ul>
-        <button class="burger">
+        
+            <ul class="nav-ul">
+                <li class="link"><a href="index.html">Accueil</a></li>
+                <li class="link"><a href="personnages.html">Personnages</a></li>
+                <li class="link"><a href="monde.html">Mondes</a></li>
+                <li class="link"><a href="genre.html">Genres</a></li>
+                <li class="link"><a href="histoire.html">L'histoire</a></li>
+                <li class="link"><a href="contact.html">contact</a></li>
+            </ul>
+        
+        <button type="button" title="burger" class="burger">
             <span class="bar"></span>
         </button>
     </nav>
-    <Footer>
+    <section id="titre">
         <div class="indexh1">
-            <h1 id="title" class="titleProject">bienvenue dans l'univers Fantasy</h1><br>
+            <h1 id="title" class="titleProject">bienvenue dans l'univers Fantasy</h1>
         </div>
-    </Footer>
+    </section>
+    <section id="intro" class="intro">
+        <h3>Introduction</h3>
+        <p><strong>Entre fantaisie, fantastique, fantasy, science-fiction, les définitions se mêlent et se croisent,
+                mettons donc les mots à plat:
+            </strong></p>
+        <p><strong>Fantaisie:</strong> désigne un univers totalement délié du nôtre, genre Le Seigneur des Anneaux,
+            L’Héritage (Eragon), Les Royaumes Oubliés (accessoirement basé sur l’univers de Dungeon & Dragons)…</p>
+        <p><strong>Fantastique:</strong>c’est lorsque l’univers est entre le nôtre et un autre. Allez, au pif, Harry
+            Potter, Ewilan, The Mortal Instruments, Sword Art Online… </p>
+        <p><strong>Fantasy:</strong> eh ben… Piège! Celui-là est en réalité un mot anglais qui regroupe fantaisie ET
+            fantastique. Pratique!</p>
+        <p><strong>Science-fiction: </strong> ce sont les univers qui se basent sur des progrès scientifiques ou
+            technologiques, souvent futuristes ou dans des espaces-temps différents du nôtre. Forcément, on y retrouve
+            Star Wars, Star Trek, Stranger Things, Ready Player One, Les Gardiens de la Galaxie…</p>
+    </section>
+
     <script src="app.js"></script>
 </body>
 

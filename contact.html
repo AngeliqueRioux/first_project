@@ -5,31 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Fantasy-fantastique</title>
 </head>
 
 <body class="contact">
-    <nav class="navbar" role="navigation">
-        <div class="logo"></div>
+    <nav id="navBar" class="navbar" role="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/images/logo.png" alt="imageLogo"></a>
+            <div class="mode" onclick="myFunction()"></div>
+        </div>
         <ul class="nav-ul">
             <li class="link"><a href="index.html">Accueil</a></li>
             <li class="link"><a href="personnages.html">Personnages</a></li>
             <li class="link"><a href="monde.html">Mondes</a></li>
-            <li class="link"><a href="magie.html">Magie</a></li>
+            <li class="link"><a href="genre.html">Genres</a></li>
             <li class="link"><a href="histoire.html">L'histoire</a></li>
             <li class="link"><a href="contact.html">contact</a></li>
         </ul>
-        <button class="burger">
+        <button type="button" title="burger" class="burger">
             <span class="bar"></span>
         </button>
     </nav>
-
-    <div>
-        <h1>Fantasy & fantastique</h1>
-    </div>
+    <h1>Contactez-nous</h1>
     <section id="corps" class="corps">
-
+        <form action="page.php" class="corps">
+            <fieldset>
+                <legend>Votre Prénom*</legend>
+                <label for="firstname"></label>
+                <input type="text" id="firstname" placeholder="Prénom" required>
+            </fieldset>
+            <fieldset>
+                <legend>Votre Nom*</legend>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Nom" required>
+            </fieldset>
+                <fieldset>
+                    <legend>Email*</legend>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="@" required>
+                </fieldset>
+                <fieldset class="birthday">
+                    <legend>Date de Naissance</legend>
+                    <label for="birthday"></label>
+                    <input title="date" type="date" name="birthday" id="birthday" placeholder="">
+                </fieldset>
+            <div class="message">
+                <label for="message">Message:</label><br />
+                <textarea id="message" placeholder="message"></textarea>
+            </div>
+            <div>
+                <button class="submit" title="submit" type="submit">Envoyer</button>
+            </div>
+        </form>
     </section>
     <script src="app.js"></script>
 </body>

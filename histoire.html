@@ -5,42 +5,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="history.css">
     <title>Histoire</title>
 </head>
 
 <body class="histoire">
-    <nav class="navbar" role="navigation">
-        <div class="logo"></div>
+    <nav id="navBar" class="navbar" role="navigation">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/logo.png" alt="imageLogo"></a>
+            <div class="mode" onclick="myFunction()"></div>
+        </div>
         <ul class="nav-ul">
             <li class="link"><a href="index.html">Accueil</a></li>
             <li class="link"><a href="personnages.html">Personnages</a></li>
             <li class="link"><a href="monde.html">Mondes</a></li>
-            <li class="link"><a href="magie.html">Magie</a></li>
-            <li class="link"><a href="histoire.html">L'histoire</a></li>
+            <li class="link"><a href="genre.html">Genres</a></li>
+            <li class="link"><a href="histoire.html">Histoire</a></li>
             <li class="link"><a href="contact.html">contact</a></li>
         </ul>
-        <button class="burger">
+        <button type="button" title="burger" class="burger">
             <span class="bar"></span>
         </button>
     </nav>
-
-    <div>
-        <h1>Fantasy & fantastique</h1>
-    </div>
-    <section id="corps" class="corps">
-        <section id="intro" class="intro">
-            <p><strong>Entre fantaisie, fantastique, fantasy, science-fiction, les définitions se mêlent et se croisent, mettons donc les mots à plat:
-            </strong></p>
-            <p><strong>Fantaisie:</strong> désigne un univers totalement délié du nôtre, genre Le Seigneur des Anneaux, L’Héritage (Eragon ;) ), Les Royaumes Oubliés (accessoirement basé sur l’univers de Dungeon & Dragons)…</p>
-            <p><strong>Fantastique:</strong>c’est lorsque l’univers est entre le nôtre et un autre. Allez, au pif, Harry Potter, Ewilan, The Mortal Instruments, Sword Art Online… </p>
-            <p><strong>Fantasy:</strong> eh ben… Piège! Celui-là est en réalité un mot anglais qui regroupe fantaisie ET fantastique. Pratique!</p>
-            <p><strong>Science-fiction: </strong> ce sont les univers qui se basent sur des progrès scientifiques ou technologiques, souvent futuristes ou dans des espaces-temps différents du nôtre. Forcément, on y retrouve Star Wars, Star Trek, Stranger Things, Ready Player One, Les Gardiens de la Galaxie…</p>
-            <p>Viviane, fée des Taureaux
-                La légende de la fée Viviane ou la Dame du Lac commença lorsqu’elle donna l’épée Excalibur à Merlin l’enchanteur qui la remit ensuite au roi Arthur de Bretagne, puis en guidant Arthur mourant…</p>
-            <p>« Les bandes dessinées ne seront jamais aussi tarées que ceux qui aiment ça. » Georges Wolinski (Comics will never be as crazy as comics lovers.)</p>
-            </section>
+    <span class="banniere">
+        <h1>Histoire de la Fantasy à travers les médias</h1>
+        <img class="bibliotheque" src="./assets/images/library-ouverture-vers-le-monde-Fantasy.jpg" alt="livre">
+    </span>
+    <section id="inventaires">
+        <ul class="inventaires">
+            <li class="link1"><a href="#litterature">Littérature</a></li>
+            <li class="link1"><a href="#bd">Bandes Déssinées</a></li>
+            <li class="link1"><a href="#cinema">Cinéma</a></li>
+            <li class="link1"><a href="#jeux">Jeux de Société et Jeux Vidéo</a></li>
+            <li class="link1"><a href="#music">Musique</a></li>
+        </ul>
     </section>
+
+    <section id="les-supports-dans-l-histoire" class="main">
+        <div id="litterature" class="page">
+            <figure class="titre">
+                
+                <img class= livre src="./assets/images/livre-ouvert1.jpg" alt="livre">  
+                <figcaption><h2>Littérature</h2></figcaption>
+
+            </figure>
+            
+            <p>La période à laquelle les critiques s'accordent tous à voir naître la fantasy est le XIX siècle, avec
+                l'auteur écossais George MacDonald (Phantastes en 1858, The Princess and the Goblin en 1872) ou encore
+                avec
+                l'écrivain, peintre et architecte William Morris (La Plaine étincelante en 1891, The Wood Beyond the
+                World
+                en 1894, La Source au bout du monde en 1896) dont l'œuvre a influencé Tolkien. L'une des œuvres les plus
+                marquantes de cette tendance est la tétralogie de Richard Wagner L'Anneau du Nibelung (1869), qui
+                s'inspire
+                de la mythologie germanique et de la mythologie nordique.</p>
+
+            <p>Il faut attendre le XXe siècle pour que ce style touche un public plus large. En France, le roman Les
+                Centaures d'André Lichtenberger, paru en 1904, met en scène une préhistoire alternative où centaures,
+                tritons et faunes cohabitent avec les premiers hommes ; le roman est rattaché à l'époque au genre du
+                fantastique avant d'être considéré a posteriori comme un précurseur de la fantasy. La littérature
+                britannique produit des romans comme Le Serpent Ouroboros d'E. R. Eddison (1922)ou La Fille du roi des
+                elfes
+                (The King of Elfland's Daughter) de lord Dunsany (1924). L'une des premières romancières à aborder le
+                genre
+                est Hope Mirrlees avec Lud-en-Brume (1926). Les années 1930 voient L'Épée dans la pierre de T. H. White,
+                qui
+                s'inspire de la légende arthurienne (le roman est plus tard adapté par les studios Disney en un film
+                d'animation, Merlin l'enchanteur, en 1963). Les années 1940 et 1950 voient s'épanouir l'œuvre de Mervyn
+                Peake, à la fois poète, illustrateur, peintre et romancier, connu principalement pour sa suite
+                romanesque
+                Ghormenghast qui se déroule dans un immense château.</p>
+
+            <p>Dans le même temps, aux États-Unis, les revues pulp apparaissent dans les années 1890 et se multiplient
+                au
+                début du XXe siècle : elles publient d'innombrables nouvelles et romans en épisodes appartenant à tous
+                les
+                genres de littératures de l'imaginaire. À partir de 1915, apparaissent des pulps spécialisés dans l'un
+                ou
+                l'autre genre ; l'un de ceux qui se consacrent le plus à la fantasy est Weird Tales, qui paraît de 1923
+                à
+                1954 et publie en particulier les nouvelles du cycle de Conan le Barbare de Robert E. Howard, l'un des
+                pères
+                fondateurs de l’heroic fantasy. La fantasy américaine connaît également des romancières comme Evangeline
+                Walton avec son cycle des Mabinogion. En Australie, la romancière Pamela L. Travers publie en 1934
+                l'histoire d'une gouvernante-magicienne, Mary Poppins, destinée initialement à un jeune lectorat.</p>
+
+
+            <p>C'est dans les années 1950 que la fantasy, genre devenu populaire mais manquant encore de reconnaissance,
+                connaît un succès à la fois public et critique avec Le Seigneur des anneaux de J. R. R. Tolkien
+                (1954–1955),
+                qui devient l'archétype du roman médiéval-fantastique. L'«énorme météore » Tolkien n'est pas le créateur
+                de
+                la fantasy, loin de là, mais il opère une véritable « refondation du genre » qui explique l'importance
+                primordiale que lui accordent les auteurs venus après lui.</p>
+
+            <p>Les traductions d'auteurs anglo-saxons dominent longtemps le marché de la fantasy en France et en Europe,
+                mais le genre essaime peu à peu dans les différents pays, donnant naissance à de nouvelles générations
+                d'auteurs qui illustrent le genre et le renouvellent parfois de façon originale. En France, Les
+                Chroniques
+                des Crépusculaires de Mathieu Gaborit (1995) et Le Secret de Ji de Pierre Grimbert (1997) comptent parmi
+                les
+                premiers succès d'auteurs français, suivis par des auteurs toujours plus nombreux, y compris dans la
+                littérature de jeunesse. Parmi les classiques européens, citons en Allemagne L'Histoire sans fin de
+                Michael
+                Ende (1979), en Italie Nicolas Eymerich, l'inquisiteur de Valerio Evangelisti (1994). En Angleterre, le
+                Disque-monde de Terry Pratchett, dont la série commence en 1983 avec La Huitième couleur, devient un
+                chef-d'œuvre de fantasy humoristique empreinte d'humour anglais. En Espagne, dans un genre un peu
+                différent,
+                les aventures du capitaine Alatriste d'Arturo Pérez-Reverte (à partir de 1996) réinventent le roman de
+                cape
+                et d'épée, tandis que des auteurs comme Javier Negrete illustrent à la fois l'heroic fantasy ( avec le
+                cycle
+                de la Tramorée paru dans les années 2000-2010) et la fantasy mythique (Le Mythe d'Er, Seigneurs de
+                l'Olympe).</p>
+
+            <p>Le genre se développe également sur d'autres continents. En Thaïlande, The Mermaid Apprentices(« Les
+                apprenties sirènes »), et les suites de cet ouvrage de la jeune romancière Pieretta Dawn, constituent
+                l'un
+                des exemples de l'influence de la série Harry Potter. Au Japon, citons la série-fleuve Guin Saga de
+                Kaoru
+                Kurimoto, commencée en 1979 et qui a dépassé les 100 volumes, ou encore Les Chroniques de la guerre de
+                Lodoss de Ryo Mizuno (à partir de 1988).</p>
+        </div>
+        <div id="bd">
+            <div class=BD> 
+            <h2 class="BD">Bandes Dessinées</h2>
+
+            <p>Dans le domaine de la bande dessinée, la fantasy est présente dès les premiers chefs-d'œuvre du neuvième
+                art
+                : Little Nemo in Slumberland (1905-1913) de Winsor McCay montre un petit garçon voyageant dans le pays
+                des
+                rêves, où il rencontre le roi Morphée et sa fille, la Princesse. En 1937, Prince Vaillant présente une
+                longue épopée dans un cadre inspiré de la légende arthurienne. Plus tard, en France, certaines séries
+                parues
+                dans Spirou relèvent de la fantasy pour la jeunesse : citons par exemple L'Épervier bleu, Hultrasson le
+                Viking, ou encore Johan et Pirlouit de Peyo, lancée en 1954, qui se déroule dans un Moyen Âge de fantasy
+                et
+                où les fameux Schtroumpfs font leur première apparition en 1958. En 1977, la série Thorgal de Jean Van
+                Hamme
+                et de Grzegorz Rosiński, lance véritablement le genre dans la bande dessinée francophone, au départ sans
+                être étiquetée en tant que fantasy, mais devient une valeur sûre du genre dans les années suivantes. La
+                Quête de l'oiseau du temps, dont le premier cycle, dessiné par Loisel sur un scénario de Le Tendre,
+                paraît
+                entre 1983 et 1987, devient également un classique. Clairement identifiée comme de l'heroic fantasy et
+                publiée entre 1994 et 2000, la série Lanfeust de Troy rencontre un grand succès, sans doute grâce à sa
+                dimension humoristique originale. La bonne santé de la bande dessinée en France a permis la
+                multiplication
+                des séries ces dernières années, donnant lieu à d'autres succès, comme la série Donjon de Lewis
+                Trondheim et
+                Joann Sfar, lancée en 1998.</p>
+        </div>
+        <div class="cinema">
+            <h2 id="cinema">Cinéma</h2>
+
+            <p>Au cinéma, les premiers films de fantasy peuvent remonter aux dessins animés de Disney adaptés des contes
+                de
+                fées, ou bien au Magicien d'Oz de Victor Fleming (1939) ; mais les premiers films de fantasy proprement
+                dits
+                sortent sur les écrans dans les années 1970-1980, avec Conan le Barbare de John Milius (1981), Dark
+                Crystal
+                de Jim Henson (1982) ou encore Willow de Ron Howard (1988). Après un certain déclin dans les années
+                1990, la
+                fantasy au cinéma connaît un regain spectaculaire avec la trilogie Le Seigneur des anneaux (2001-2003)
+                de
+                Peter Jackson, adaptation du classique de Tolkien, dont l'univers visuel soigné et le souffle épique
+                confèrent aux films de fantasy une ampleur nouvelle. Les adaptations de romans et de cycles romanesques
+                au
+                cinéma se multiplient dans les années 2000, avec les films dérivés de Harry Potter, Le Monde de Narnia,
+                Eragon ou de À la croisée des mondes.</p>
+        </div>
+        <div class="jeux">
+            <h2 id="jeux">Jeux de société et jeux vidéo</h2>
+
+            <p>La fantasy est également très présente dans le développement des jeux de société et des jeux vidéo. Parmi
+                les nouveaux types de jeux de société inventés à la fin du XXe siècle, le tout premier jeu de rôle,
+                Donjons
+                et Dragons, créé aux États-Unis en 1974 par E. Gary Gygax et Dave Arneson, se déroule dans un univers de
+                fantasy inspiré à l'origine par Le Seigneur des Anneaux. Donjons et Dragons et la fantasy anglo-saxonne
+                post-Tolkien inspirent à leur tour le premier jeu de cartes à collectionner, Magic : l'assemblée (lancé
+                en
+                1993). Les années 1970 et 1980 voient également le développement des wargames et des jeux de figurines,
+                dont
+                certains délaissent la simulation de batailles historiques héritière des soldats de plomb traditionnels
+                pour
+                des univers fantastiques : en fantasy, le premier classique du genre est Warhammer de Games Workshop,
+                lancé
+                en 1983 et dont l'univers est ensuite décliné sur d'autres supports (jeu de rôle, jeux vidéo). En
+                France,
+                citons Confrontation (1996) de Rackham et les autres jeux situés dans l'univers d'Aarklash. Citons
+                également, entre la fin des années 1970 et les années 1990, le concept du livre-jeu, dont le premier
+                grand
+                succès est Le Sorcier de la Montagne de feu (1982), qui donne naissance à plusieurs collections
+                d'aventures
+                de fantasy, avec des univers comme Loup solitaire.</p>
+
+            <p>Dans le domaine du jeu vidéo, la fantasy inspire plusieurs séries classiques dans différents genres : The
+                Legend of Zelda (1986) et Final Fantasy (1987) pour les jeux d'aventure et de combat, Warcraft (1993) en
+                stratégie en temps réel, Myst (1995) qui contribue fortement au développement des jeux d'aventure à
+                énigmes
+                en pointer-et-cliquer. Final Fantasy, créé par Hironobu Sakaguchi en 1987 au Japon, connaît un succès
+                planétaire tout en renouvelant l'esthétique du genre avec des éléments propres à la culture nippone. Le
+                développement des jeux en ligne massivement multijoueur donne naissance à de vastes mondes persistants
+                de
+                fantasy : Ultima Online (1997), EverQuest (1999), Guild Wars (2005). Le dernier grand succès du genre,
+                World
+                of Warcraft (2005), dérivé de l'univers Warcraft.</p>
+        </div>
+        <div class="music">
+            <h2 id="music">Musique</h2>
+
+            <p>La musique s'empare également des thèmes et des univers de la fantasy. Dans la deuxième moitié du XXe
+                siècle, le rock progressif emprunte à la fantasy littéraire certaines de ses références : le nom de The
+                Piper at the Gates of Dawn (1967), premier album du groupe Pink Floyd, fait référence à un chapitre du
+                Vent
+                dans les saules de Kenneth Grahame, un classique de la fantasy animalière, avec des chansons inspirées
+                des
+                contes, comme Matilda Mother ou The Gnome. Dans l'album In the Court of the Crimson King du groupe King
+                Crimson, qui fonde le rock progressif, la chanson qui donne son nom à l'album se déroule dans un univers
+                médiéval. Le développement dans les années 1960-1970 des albums-concepts ou encore des opéras-rock, qui
+                racontent souvent une histoire cohérente, donne naissance à des intrigues qui relèvent parfois de la
+                fantasy. Le metal progressif et le metal symphonique, quoique recourant plus volontiers au fantastique
+                et à
+                l'horreur, s'approprient également le genre : citons par exemple les albums du groupe Rhapsody of Fire,
+                qui
+                relatent une seule saga épique, la Saga de l'épée d'émeraude. En dehors de réalisations de cette
+                ampleur,
+                les groupes de rock ou de métal aiment à inclure dans leurs compositions des références à la mythologie
+                ou
+                aux œuvres de fantasy, de façon plus ou moins ponctuelle selon les groupes et les albums. Dans le
+                domaine de
+                la musique de film, les films de fantasy sont l'occasion pour les compositeurs de réaliser des bandes
+                originales utilisant parfois des orchestres symphoniques (par exemple la bande originale pour Le
+                Seigneur
+                des anneaux composée par Howard Shore), parfois relevant plutôt de la musique synthétique (par exemple
+                la BO
+                de Legend réalisée par Tangerine Dream).</p>
+        </div>
+    </section>
+    <div class="top">
+        <a href="#top"><img src="./assets/images/top.png" alt="top"></a>
+    </div>
     <script src="app.js"></script>
 </body>
 
