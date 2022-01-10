@@ -29,7 +29,7 @@
     --font-size: 1rem;
     --fonth1: "fleurDeLeah", arial, sans-serif;
     --fontnavbar: "Frederickat", sans-serif;
-    --navbar-bg-colorlight: rgb(141, 224, 141);
+    --navbar-bg-colorlight: rgb(160, 204, 188);
     --navbar-colorlight: black;
     --navbar-bg-color: rgb(51, 26, 26);
     --navbar-color: rgb(248, 238, 225);
@@ -96,7 +96,7 @@ ul {
     z-index: 3;
     padding: 8px;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: var(--navbar-bg-colorlight);
     font-family: var(--fontnavbar);
     color: var(--navbar-colorlight);
@@ -126,10 +126,13 @@ ul {
 /*mediaqueries max*/
 
 @media screen and (max-width:768px) {
-
+    .monde{
+        width: 100%;
+        overflow-x: hidden;
+    }
     /**burger**/
     .nav-ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 0;
         height: calc(100vh - 50px);
@@ -144,6 +147,7 @@ ul {
     .active .nav-ul {
 
         width: 100%;
+        display: flex;
     }
 
     .link>a {
@@ -238,20 +242,24 @@ ul {
 /**mobile**/
 @media only screen and (max-width: 320px) {
 
-     /**navbar**/
+    /**navbar**/
     .navbar {
         height: 30px;
     }
 
     .nav-ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 0;
-        height: calc(100vh - 45px);
+        height: calc(100vh - 40px);
         position: absolute;
-        top: 45px;
+        top: 40px;
     }
+    .active .nav-ul {
 
+        width: 100%;
+        display: flex;
+    }
     .link>a {
         display: block;
         padding: 1rem;

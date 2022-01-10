@@ -169,7 +169,7 @@ input {
     z-index: 3;
     padding: 8px;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: var(--navbar-bg-colorlight);
     font-family: var(--fontnavbar);
     color: var(--navbar-colorlight);
@@ -199,6 +199,10 @@ input {
 /*mediaqueries max*/
 
 @media screen and (max-width:768px) {
+    .contact{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
     /**dark mode **/
     .dark-mode .active .nav-ul {
@@ -223,7 +227,7 @@ input {
 
     /**burger**/
     .nav-ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 0;
         height: calc(100vh - 50px);
@@ -234,13 +238,9 @@ input {
         transition: width 0.5s 0.1s ease-in-out;
     }
 
-
-    .active .navbar{
-        display: none;
-    }
-
     .active .nav-ul {
         width: 100%;
+        display: flex;
     }
 
     .link>a {
@@ -311,7 +311,7 @@ input {
 }
 
 /**mobile**/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
 
     .main {
         padding: 10px 15px 10px 15px;
@@ -348,20 +348,23 @@ input {
         font-size: 1em;
     }
 
-
-
     /**navbar**/
     .navbar {
         height: 30px;
     }
 
     .nav-ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 0;
         height: calc(100vh - 40px);
         position: absolute;
         top: 40px;
+    }
+    .active .nav-ul {
+
+        width: 100%;
+        display: flex;
     }
 
     .link>a {
