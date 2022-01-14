@@ -16,3 +16,10 @@ function showSlides() {
   items[slideIndex-1].className += " actives";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+const text = document.querySelectorAll('.textClick')
+console.log(text)
+const click1 = () => text[0].style.display = 'flex'
+const click2 = () => text[1].style.display = 'flex'
+const fermeClick1 = () => text[0].style.display = 'none'
+const fermeClick2 = () => text[1].style.display = 'none'

@@ -24,12 +24,18 @@
     src: url(./assets/fonts/Pacifico-Regular.ttf);
 }
 
+@font-face {
+    font-family: "cookies";
+    src: url(./assets/fonts/Cookie-Regular.ttf);
+}
+
 /*variables*/
 :root {
-    --font-size: 1rem;
+    --font-sizeh3: 2.2em;
     --fonth1: "fleurDeLeah", arial, sans-serif;
+    --fonth3: "cookies", arial, sans-serif;
     --fontnavbar: "Frederickat", sans-serif;
-    --navbar-bg-colorlight: rgb(160, 204, 188);
+    --navbar-bg-colorlight: rgb(135, 181, 241);
     --navbar-colorlight: black;
     --navbar-bg-color: rgb(51, 26, 26);
     --navbar-color: rgb(248, 238, 225);
@@ -50,9 +56,89 @@ ul {
 }
 
 /*background body*/
+.mondes {
+    background-color: var(--navbar-bg-colorlight);
+}
 
+.titre {
+    background-image: url(./assets/images/ville\ futuriste-large.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 350px;
 
+}
+.titre h1{
+    text-align: center;
+    font-family: var(--fonth1);
+    font-size: 7vw;
+    color: rgb(33, 37, 243);
+    text-shadow: 1px 2px 2px rgb(34, 32, 32), 0 0 2em rgb(218, 50, 78), 0 0 0.2em rgb(43, 49, 45);
+}
+h2{ 
+    text-align: center;
+    font-size: 3vw;
+    font-family: var(--fonth3);
+}
+.monde{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    max-height: 500px;
+    margin: 0;
+    margin-bottom: 1.5%;
+}
+.monde img, .newImage {
 
+    max-height: 500px;
+    max-width: auto;
+}
+.monde1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.monde1 img {
+    width: calc(100% - 10px);
+    margin: 0px 5px 1.5% 5px;
+    max-height: 500px;
+}
+.mondeLivre{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 96%;
+}
+.imgMonde{
+    width: 50%;
+}
+.imgMonde img, .livres img {
+    width: 100%;
+    height: auto;
+}
+.livres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    margin-left: 2%;
+ }
+
+ .video{
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+ }
 /** dark-mode **/
 
 .dark-mode .navbar {
@@ -86,6 +172,7 @@ ul {
     background-size: contain;
     margin-left: 8px;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -126,9 +213,23 @@ ul {
 /*mediaqueries max*/
 
 @media screen and (max-width:768px) {
-    .monde{
+    .monde {
         width: 100%;
         overflow-x: hidden;
+    }
+    .titre {
+        background-image: url(./assets/images/ville\ futuriste.jpg);
+    
+        background-size: cover;
+        width: auto;
+        height: 200px;
+    
+    }
+    .titre h1{
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
     }
     /**burger**/
     .nav-ul {
@@ -152,8 +253,8 @@ ul {
 
     .link>a {
         display: block;
-        padding: 1rem;
-        font-size: 1.6rem;
+        padding: 10px;
+        font-size: 1.3rem;
         transition: all 0.4s ease-in-out;
     }
 
@@ -216,32 +317,63 @@ ul {
     }
 
 }
-    /**dark mode **/
-    .dark-mode .active .nav-ul {
-        background: var(--navbar-bg-color);
+
+/**dark mode **/
+.dark-mode .active .nav-ul {
+    background: var(--navbar-bg-color);
 
 
-    }
+}
 
-    .dark-mode .link>a {
-        color: var(--navbar-color);
-    }
+.dark-mode .link>a {
+    color: var(--navbar-color);
+}
 
-    .dark-mode .bar {
-        background-color: white;
-    }
+.dark-mode .bar {
+    background-color: white;
+}
 
-    .dark-mode .bar::after {
-        background-color: white;
-    }
+.dark-mode .bar::after {
+    background-color: white;
+}
 
-    .dark-mode .bar::before {
-        background-color: white;
-    }
+.dark-mode .bar::before {
+    background-color: white;
+}
 
 /**mobile**/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
+    .monde {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
+        margin-bottom: 1.5%;
+    }
+    .monde img{
+        width: 100%;
+        height: auto;
+    }
+    .titre {
+        background-image: url(./assets/images/ville\ futuriste-mobile.jpg);
+    
+        background-size: cover;
+        width: auto;
+        height: 116px;
+    
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .titre h1{
+        font-size: 2em;
+        color: rgb(75, 75, 241);
+        text-shadow: none;
+    }
+    
     /**navbar**/
     .navbar {
         height: 30px;
@@ -255,11 +387,13 @@ ul {
         position: absolute;
         top: 40px;
     }
+
     .active .nav-ul {
 
         width: 100%;
         display: flex;
     }
+
     .link>a {
         display: block;
         padding: 1rem;
@@ -306,8 +440,10 @@ ul {
         transition: all 0.5s ease-in-out;
     }
 }
+
 /*mediaqueries min */
 @media screen and (min-width:768px) {
+
     /**darkmode**/
     .dark-mode .link>a::after {
         display: block;

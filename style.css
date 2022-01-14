@@ -33,7 +33,7 @@
     --navbar-colorlight: black;
     --navbar-bg-color: rgb(53, 32, 32);
     --navbar-color: rgb(248, 238, 225);
-    --bg-intro: rgba(245, 245, 245, 0.486);
+    --bg-intro: rgba(216, 199, 199, 0.671);
 }
 
 
@@ -74,7 +74,7 @@ h1 {
     font-size: 8vw;
     text-align: center;
     text-transform: capitalize;
-    text-shadow: 1px 1px 2px rgb(39, 39, 39), 0 0 1em rgb(255, 0, 106), 0 0 0.2em rgb(10, 116, 42);
+    text-shadow: 1px 1px 2px rgb(39, 39, 39), 0 0 1em rgb(89, 0, 255), 0 0 0.2em rgb(10, 116, 42);
 
 }
 
@@ -292,8 +292,8 @@ p {
 
     .link>a {
         display: block;
-        padding: 8px;
-        font-size: 1.2rem;
+        padding: 10px;
+        font-size: 1.3rem;
         transition: all 0.4s ease-in-out;
     }
 

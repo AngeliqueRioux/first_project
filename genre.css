@@ -71,18 +71,19 @@ ul {
     flex-direction: row;
     justify-content: center;
     height: 100%;
-    background-image: linear-gradient(to left, rgb(127, 221, 224), rgb(160, 204, 188),rgb(104, 95, 94));
+    background-image: linear-gradient(to left, rgb(104, 95, 94),rgb(160, 204, 188),rgb(127, 221, 224));
 
 }
 
 h2 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 7vw;
     text-shadow: 1px 2px 2px black, 0 0 2em rgb(68, 73, 69), 0 0 0.2em rgb(43, 49, 45);
     color: white;
     font-family: var(--fonth1);
     text-transform: capitalize;
-    height: 100px;
+    height: auto;
+    margin-bottom: 2%;
 }
 
 h3 {
@@ -283,8 +284,8 @@ p {
 
     .link>a {
         display: block;
-        padding: 1rem;
-        font-size: 1.6rem;
+        padding: 10px;
+        font-size: 1.3rem;
         transition: all 0.4s ease-in-out;
     }
 

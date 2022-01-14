@@ -1,7 +1,7 @@
 
 
 //burger
-let clickBurger = false
+
 
 function toggleMenu() {
     const burger = document.querySelector('.burger');
@@ -11,14 +11,15 @@ function toggleMenu() {
     burger.addEventListener('click', () => {        
         navbar.classList.toggle('active');
         navul.classList.toggle('active');
+        
     })
 }
 
 toggleMenu();
 
 //dark mode
-function myFunction() {
-    var element = document.body;
+function darkMode() {
+    let element = document.body;
     element.classList.toggle("dark-mode");
 }
 

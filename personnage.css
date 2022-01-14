@@ -24,10 +24,17 @@
     src: url(./assets/fonts/Pacifico-Regular.ttf);
 }
 
+@font-face {
+    font-family: "cookies";
+    src: url(./assets/fonts/Cookie-Regular.ttf);
+}
+
+
 /*variables*/
 :root {
     --font-size: 1rem;
     --fonth1: "fleurDeLeah", arial, sans-serif;
+    --fonth3: "cookies", arial, sans-serif;
     --fontnavbar: "Frederickat", sans-serif;
     --navbar-bg-colorlight: rgb(160, 204, 188);
     --navbar-colorlight: black;
@@ -41,7 +48,7 @@
     outline: none;
     margin: 0;
     padding: 0;
- }
+}
 
 ul {
     list-style: none;
@@ -49,95 +56,245 @@ ul {
 }
 
 /*body*/
+.personnages {
+    background-image: url(./assets/images/fondNoir.JPG);
+    background-position: center;
+    background-size: cover;
+    color: rgb(241, 216, 178);
+    font-size: 16px;
 
+}
+
+.titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+}
+
+.titre h1 {
+    font-size: 7vw;
+    font-family: var(--fonth1);
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--fonth3);
+    text-align: center;
+    font-size: 3em;
+}
+
+.imgTitre {
+    width: 20%;
+    height: auto;
+}
+
+.legend1 {
+    color: #faf9fd;
+    background-color: rgba(151, 151, 151, 0.24);
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    opacity: 0;
+}
+
+.legend3 {
+    color: #faf9fd;
+    background-color: rgba(151, 151, 151, 0.24);
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    opacity: 0;
+}
+
+.legend4 {
+    color: #faf9fd;
+    background-color: rgba(151, 151, 151, 0.24);
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 87%;
+    width: auto;
+    opacity: 0;
+
+}
+
+.legend2 {
+    color: black;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 85%;
+
+    width: auto;
+    opacity: 0;
+}
+
+.animalFantasy:hover .legend1 {
+    opacity: 1;
+    border-radius: 1px;
+    background: #b6b4b4;
+    box-shadow: 7px 7px 14px #717070,
+        -7px -7px 14px #fbf8f8;
+}
+
+.animalFantasy:hover .legend3 {
+    opacity: 1;
+    border-radius: 1px;
+    background: #b6b4b4;
+    box-shadow: 7px 7px 14px #717070,
+        -7px -7px 14px #fbf8f8;
+}
+
+.animalFantasy:hover .legend4 {
+    opacity: 1;
+    border-radius: 1px;
+    background: #b6b4b4;
+    box-shadow: 7px 7px 14px #717070,
+        -7px -7px 14px #fbf8f8;
+}
+
+.animalFantasy:hover .legend2 {
+    opacity: 1;
+}
+
+/*texte apparait avec click*/
+.clickImg {
+    cursor: pointer;
+}
+
+.textClick {
+    display: none;
+    background-color: powderblue;
+    color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+/**footer**/
+.papaNoel {
+    background-image: url(./assets/images/pere-noel.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    height: 80px;
+    width: 100%;
+    opacity: 0.8;
+}
 
 /*slides dragon*/
 .dragons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: flex-start;
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin-bottom: 1.5%;
 }
-.slideDragons{
+
+.slideDragons {
     display: flex;
     flex-direction: column;
 }
+
 .mySlides {
     display: flex;
 
 }
 
 img {
-       width: 100%;
+    width: 100%;
 }
+
 .animalFantasy {
-    max-width: 300px;
+    align-content: flex-start;
+    width: 30%;
+    height: auto;
+
 }
+
 /* Slideshow container */
 
 .slideshow-container {
-  max-width: 300px;
-  position: relative;
-  margin: auto;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 
 }
 
 /* legende */
 .legend {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f7f6fa;
+    background-color: rgba(0, 0, 0, 0.137);
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    text-align: center;
 }
 
 /* numéro de slide (1/8 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* items */
 .items {
     text-align: center;
 }
+
 .item {
     margin-top: 10px;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .actives {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /** dark-mode **/
@@ -181,6 +338,7 @@ img {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
+
     top: 0;
     z-index: 3;
     padding: 8px;
@@ -216,6 +374,54 @@ img {
 
 @media screen and (max-width:768px) {
 
+    /**body**/
+    .titre {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .titre h1 {
+        font-size: 60px;
+        font-family: var(--fonth1);
+    }
+
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .imgTitre {
+        display: none;
+        width: 0%;
+    }
+
+    .legend1, .legend3 {
+        font-size: 15px;
+        position: absolute;
+        bottom: 18px;
+        width: auto;
+        opacity: 0;
+    }
+
+    /* items */
+    .items {
+        text-align: center;
+    }
+
+    .item {
+        margin-top: 8px;
+        height: 10px;
+        width: 10px;
+        margin: 0 1px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
     /**burger**/
     .nav-ul {
         display: none;
@@ -237,8 +443,8 @@ img {
 
     .link>a {
         display: block;
-        padding: 1rem;
-        font-size: 1.6rem;
+        padding: 10px;
+        font-size: 1.3rem;
         transition: all 0.4s ease-in-out;
     }
 
@@ -301,31 +507,72 @@ img {
     }
 
 }
-    /**dark mode **/
-    .dark-mode .active .nav-ul {
-        background: var(--navbar-bg-color);
+
+/**dark mode **/
+.dark-mode .active .nav-ul {
+    background: var(--navbar-bg-color);
 
 
-    }
+}
 
-    .dark-mode .link>a {
-        color: var(--navbar-color);
-    }
+.dark-mode .link>a {
+    color: var(--navbar-color);
+}
 
-    .dark-mode .bar {
-        background-color: white;
-    }
+.dark-mode .bar {
+    background-color: white;
+}
 
-    .dark-mode .bar::after {
-        background-color: white;
-    }
+.dark-mode .bar::after {
+    background-color: white;
+}
 
-    .dark-mode .bar::before {
-        background-color: white;
-    }
+.dark-mode .bar::before {
+    background-color: white;
+}
 
 /**mobile**/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
+
+    /**body**/
+    .imgTitre {
+        display: none;
+        width: 0%;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .dragons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .animalFantasy {
+        width: 250px;
+
+    }
+    .legend2{
+        font-size: 15px;
+    }
+    .legend4{
+        font-size: 15px;
+    }
+    .legend1, .legend3 {
+        font-size: 15px;
+        position: absolute;
+        bottom: 18px;
+        width: auto;
+        opacity: 0;
+    }
+
+    /**images none**/
+    .none {
+        display: none;
+    }
 
     /**navbar**/
     .navbar {
@@ -340,6 +587,7 @@ img {
         position: absolute;
         top: 40px;
     }
+
     .active .nav-ul {
 
         width: 100%;
@@ -392,8 +640,10 @@ img {
         transition: all 0.5s ease-in-out;
     }
 }
+
 /*mediaqueries min */
 @media screen and (min-width:768px) {
+
     /**darkmode**/
     .dark-mode .link>a::after {
         display: block;

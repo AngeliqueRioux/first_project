@@ -13,7 +13,7 @@
     <nav id="navBar" class="navbar" role="navigation">
         <div class="logo">
             <a href="index.html"><img src="./assets/images/logo.png" alt="imageLogo"></a>
-            <div class="mode" onclick="myFunction()"></div>
+            <div class="mode" onClick="darkMode()"></div>
         </div>
         <ul class="nav-ul">
             <li class="link"><a href="index.html">Accueil</a></li>
@@ -29,7 +29,7 @@
     </nav>
     <h1>Contactez-nous</h1>
     <section id="corps" class="corps">
-        <form action="page.php" class="corps">
+        <form class="corps">
             <fieldset>
                 <legend>Votre Prénom*</legend>
                 <label for="firstname"></label>
@@ -40,22 +40,31 @@
                 <label for="name"></label>
                 <input type="text" id="name" placeholder="Nom" required>
             </fieldset>
-                <fieldset>
-                    <legend>Email*</legend>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="@" required>
-                </fieldset>
-                <fieldset class="birthday">
-                    <legend>Date de Naissance</legend>
-                    <label for="birthday"></label>
-                    <input title="date" type="date" name="birthday" id="birthday" placeholder="">
-                </fieldset>
+            <fieldset>
+                <legend>Email*</legend>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="@" required>
+            </fieldset>
+            <fieldset class="birthday">
+                <legend>Date de Naissance</legend>
+                <label for="birthday"></label>
+                <input title="date" type="date" name="birthday" id="birthday" placeholder="">
+            </fieldset>
             <div class="message">
                 <label for="message">Message:</label><br />
                 <textarea id="message" placeholder="message"></textarea>
             </div>
-            <div>
-                <button class="submit" title="submit" type="submit">Envoyer</button>
+            <div class="envoi-message">
+                <p class="center">
+                    <button class="submit" onClick="envoi()" title="envoi" type="button">Envoyer</button>
+                </p>
+                <div id="modal" class="modal">
+                    <div class="modal-inner content center">
+                        <h2>Merci !</h2>
+                        <p>Je vous recontacte bientôt :).</p>
+                        <button class="bouton" onClick="fermerMessage()" type="submit">Fermer</button>
+                    </div>
+                </div>
             </div>
         </form>
     </section>
