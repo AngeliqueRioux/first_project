@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,13 @@
 </head>
 
 <body class="personnages">
-    <nav class="navbar" role="navigation">
+    <nav class="navbar">
         <div class="logo">
 
             <a href="index.html"><img src="./assets/images/logo.png" alt="imageLogo"></a>
-            <div class="mode" onClick="darkMode()"></div>
+            <div class="mode" onClick="darkMode()">
+                <img class="mode" src="./assets/images/dark.jpg" alt="dark-mode">
+            </div>
 
         </div>
         <ul class="nav-ul">
@@ -34,7 +36,7 @@
         <h1>Les personnages</h1>
         <img class="imgTitre" src="./assets/images/dragonsf.png" alt="dragon">
     </header>
-    <section id="animaux">
+    <section id="animaux-et-personnages-magiques">
         <h3>Les animaux nés de notre imagination</h3>
         <div class="dragons">
             <div class="slideDragons animalFantasy">
@@ -42,42 +44,42 @@
 
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 0.jpg" alt="dragon">
+                        <img src="./assets/images/dragon0.jpg" alt="dragon">
                         <div class="legend">Chat</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 1.jpg" alt="dragon1">
+                        <img src="./assets/images/dragon1.jpg" alt="dragon1">
                         <div class="legend">serpent 1</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 2.jpg" alt="dragon2">
+                        <img src="./assets/images/dragon2.jpg" alt="dragon2">
                         <div class="legend">serpent 2</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">4 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 3.jpg" alt="dragon3">
+                        <img src="./assets/images/dragon3.jpg" alt="dragon3">
                         <div class="legend">dragon 1</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">5 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 4.jpg" alt="dragon4">
+                        <img src="./assets/images/dragon4.jpg" alt="dragon4">
                         <div class="legend">dragon 2</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">6 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 5.jpg" alt="dragon5">
+                        <img src="./assets/images/dragon5.jpg" alt="dragon5">
                         <div class="legend">dragon 3</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">7 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 6.jpg" alt="dragon6">
+                        <img src="./assets/images/dragon6.jpg" alt="dragon6">
                         <div class="legend">dragon 4</div>
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext">8 / 8</div>
-                        <img src="./assets/images/dragon pour carousel 7.jpg" alt="dragon7">
+                        <img src="./assets/images/dragon7.jpg" alt="dragon7">
                         <div class="legend">dragon 5</div>
                     </div>
 
@@ -103,31 +105,30 @@
         <div>
             <h3>Quelques personnages et animaux magiques</h3>
             <div class="dragons">
-                <div class="animalFantasy slideshow-container">
+                <figure class="animalFantasy slideshow-container">
                     <img src="./assets/images/pégase.jpg" alt="">
-                    <legend class="legend3">Pégase</legend>
-                </div>
-                <div class="animalFantasy slideshow-container none">
+                    <figcaption class="legend3">Pégase</figcaption>
+                </figure>
+                <figure class="animalFantasy slideshow-container none">
                     <img src="./assets/images/cerf-magique.jpg" alt="cerf">
-                    <legend class="legend3">Le cerf magique</legend>
-                </div>
-                <div class="animalFantasy slideshow-container">
+                    <figcaption class="legend3">Le cerf magique</figcaption>
+                </figure>
+                <figure class="animalFantasy slideshow-container">
                     <img src="./assets/images/licorne.jpg" alt="licorne">
-                    <legend class="legend3">La licorne</legend>
-                </div>
+                    <figcaption class="legend3">La licorne</figcaption>
+                </figure>
 
             </div>
             <div class="dragons">
                 <div class="animalFantasy slideshow-container">
-                    <video controls width="100%">
-                        <source src="./assets/images/Archangel .mp4" type="video/mp4">
+                    <video controls class="video">
+                        <source src="./assets/images/Archangel.mp4" type="video/mp4">
                     </video>
-                    <legend class="video">Archange</legend>
                 </div>
-                <div class="animalFantasy slideshow-container">
+                <figure class="animalFantasy slideshow-container">
                     <img src="./assets/images/fairy-tale.jpg" alt="fée">
-                    <legend class="legend3">Fée</legend>
-                </div>
+                    <figcaption class="legend3">Fée</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -136,109 +137,108 @@
         <div class="dragons">
             <div class="animalFantasy slideshow-container clickImg">
                 <img onClick="click1()" src="./assets/images/Asterix-obélix.jpg" alt="obelix">
-                <legend class="legend2">Oblélix</legend>
-
+                <p class="legend2">Oblélix</p>
                 <p class="textClick" onClick="fermeClick1()">« Les bandes dessinées ne seront jamais aussi tarées que
                     ceux qui aiment ça. »
                     Georges Wolinski (Comics will
                     never be as crazy as comics lovers.)</p>
             </div>
-            <div class="animalFantasy slideshow-container">
-                <img src="./assets/images/groot  MARVEL.jpg" alt="groot">
-                <legend class="legend2">Groot</legend>
-            </div>
-            <div class="animalFantasy slideshow-container none">
-                <img src="./assets/images/Batman .jpg" alt="Batman">
-                <legend class="legend2">Batman</legend>
-            </div>
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/groot.jpg" alt="groot">
+                <figcaption class="legend2">Groot</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/Batman.jpg" alt="Batman">
+                <figcaption class="legend2">Batman</figcaption>
+            </figure>
         </div>
         <div class="dragons">
-            <div class="animalFantasy slideshow-container">
-                <img src="./assets/images/Nightfury and Lightfury.jpg" alt="fury">
-                <legend class="legend3">Fury</legend>
-            </div>
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/Nightfury-and-Lightfury.jpg" alt="fury">
+                <figcaption class="legend3">Fury</figcaption>
+            </figure>
             <div class="animalFantasy slideshow-container clickImg">
-                <img onClick="click2()" src="./assets/images/Fée Viviane.jpg" alt="viviane">
-                <legend class="legend4">La fée Viviane</legend>
+                <img onClick="click2()" src="./assets/images/FéeViviane.jpg" alt="viviane">
+                <p class="legend4">La fée Viviane</p>
                 <p class="textClick" onClick="fermeClick2()">Viviane, fée des Taureaux
                     La légende de la fée Viviane ou la Dame du Lac commença lorsqu’elle donna l’épée Excalibur à Merlin
                     l’enchanteur
                     qui la remit ensuite au roi Arthur de Bretagne, puis en guidant Arthur mourant…</p>
             </div>
-            <div class="animalFantasy slideshow-container">
-                <img src="./assets/images/New Hero _ Super Smash Brothers Ultimate.png" alt="Super Smash">
-                <legend class="legend3">Super Smash Brothers Ultimate</legend>
-            </div>
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/NewHero-SuperSmashBrothersUltimate.png" alt="Super Smash">
+                <figcaption class="legend3">Super Smash Brothers Ultimate</figcaption>
+            </figure>
         </div>
-        <section id="herosSuite" class="dragons">
-            <div class="animalFantasy slideshow-container">
-                <img src="./assets/images/Inheritance.jpg" alt="Inheritance">
-                <legend class="legend1">Inheritance</legend>
-            </div>
-            <div class="animalFantasy slideshow-container none">
-                <img src="./assets/images/HarryPotter.jpg" alt="HarryPotter">
-                <legend class="legend1">Harry Potter</legend>
-            </div>
-            <div class="animalFantasy slideshow-container">
-                <img src="./assets/images/avatar.png" alt="avatar">
-                <legend class="legend1">Avatar</legend>
-            </div>
-        </section>
+    </section>
+    <section id="herosSuite" class="dragons">
+        <figure class="animalFantasy slideshow-container">
+            <img src="./assets/images/Inheritance.jpg" alt="Inheritance">
+            <figcaption class="legend1">Inheritance</figcaption>
+        </figure>
+        <figure class="animalFantasy slideshow-container none">
+            <img src="./assets/images/HarryPotter.jpg" alt="HarryPotter">
+            <figcaption class="legend1">Harry Potter</figcaption>
+        </figure>
+        <figure class="animalFantasy slideshow-container">
+            <img src="./assets/images/avatar.png" alt="avatar">
+            <figcaption class="legend1">Avatar</figcaption>
+        </figure>
+    </section>
+    <section id="herosSombres">
+        <h3>Héros plus sombres</h3>
+        <div class="dragons">
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/clown-méchant.jpg" alt="clown">
+                <figcaption class="legend3">ça est de retour</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/Zombie.jpg" alt="femme-sombre">
+                <figcaption class="legend3">Zombie</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/loup-garou.jpg" alt="loup-garou">
+                <figcaption class="legend3">Loup-garou</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="personnagesSecondaires">
+        <h3>Personnages secondaires</h3>
+        <div class="dragons">
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/nain-llustrations-de-Arthur-Spiderwick.jpg" alt="nain">
+                <figcaption class="legend3">Nain</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/fantome.jpg" alt="fantome">
+                <figcaption class="legend3">Fantome</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/femme-magique.jpg" alt="femme-magique">
+                <figcaption class="legend3">Femme magique</figcaption>
+            </figure>
+        </div>
+        <div class="dragons">
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/Héroine.jpg" alt="guerriere">
+                <figcaption class="legend3">La guerrière</figcaption>
+            </figure>
+            <figure class="animalFantasy slideshow-container none">
+                <img src="./assets/images/robot.jpg" alt="robot">
+                <figcaption class="legend3">Robot</figcaption>
+            </figure>
 
-        <section id="herosSombres">
-            <h3>Héros plus sombres</h3>
-            <div class="dragons">
-                <div class="animalFantasy slideshow-container">
-                    <img src="./assets/images/clown-méchant.jpg" alt="clown">
-                    <legend class="legend3">ça est de retour</legend>
-                </div>
-                <div class="animalFantasy slideshow-container none">
-                    <img src="./assets/images/Zombie.jpg" alt="femme-sombre">
-                    <legend class="legend3">Zombie</legend>
-                </div>
-                <div class="animalFantasy slideshow-container">
-                    <img src="./assets/images/loup-garou.jpg" alt="loup-garou">
-                    <legend class="legend3">Loup-garou</legend>
-                </div>
-            </div>
-        </section>
-        <section id="personnagesSecondaires">
-            <h3>Personnages secondaires</h3>
-            <div class="dragons">
-                <div class="animalFantasy slideshow-container none">
-                    <img src="./assets/images/nain illustrations de Arthur Spiderwick.jpg" alt="nain">
-                    <legend class="legend3">Nain</legend>
-                </div>
-                <div class="animalFantasy slideshow-container none">
-                    <img src="./assets/images/fantome.jpg" alt="fantome">
-                    <legend class="legend3">Fantome</legend>
-                </div>
-                <div class="animalFantasy slideshow-container none">
-                    <img src="./assets/images/femme-magique.jpg" alt="femme-magique">
-                    <legend class="legend3">Femme magique</legend>
-                </div>
-            </div>
-            <div class="dragons">
-                <div class="animalFantasy slideshow-container">
-                    <img src="./assets/images/Héroine.jpg" alt="guerriere">
-                    <legend class="legend3">La guerrière</legend>
-                </div>
-                <div class="animalFantasy slideshow-container none">
-                    <img src="./assets/images/robot.jpg" alt="robot">
-                    <legend class="legend3">Robot</legend>
-                </div>
+            <figure class="animalFantasy slideshow-container">
+                <img src="./assets/images/guerrier.jpg" alt="guerrier">
+                <figcaption class="legend3">Le guerrier</figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer class="papaNoel">
 
-                <div class="animalFantasy slideshow-container">
-                    <img src="./assets/images/guerrier.jpg" alt="guerrier">
-                    <legend class="legend3">Le guerrier</legend>
-                </div>
-            </div>
-        </section>
-        <footer class="papaNoel">
-
-        </footer>
-        <script src="app.js"></script>
-        <script src="personnage.js"></script>
+    </footer>
+    <script src="app.js"></script>
+    <script src="personnage.js"></script>
 </body>
 
 </html>

@@ -69,6 +69,9 @@ ul {
     opacity: 0.7;
     z-index: 2;
 }
+.top img{
+    width: 100px;
+}
 
 a.top:hover {
     opacity: 1;
@@ -188,7 +191,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
 
 .page p {
@@ -260,6 +263,9 @@ p {
     flex-direction: row;
 }
 
+.audio {
+    width: 100%;
+}
 /**hover**/
 .element1 img, .element2 img, .element3 img {
     max-width: 85%;
@@ -294,14 +300,18 @@ p {
     align-items: center;
 }
 
-.logo img {
+.logo img, .mode {
     height: 50px;
 }
 
 .mode {
+    display: flex;
+    align-items: center;
+
+}
+.mode img {
     height: 28px;
     width: 31px;
-    background-image: url(/assets/images/dark.jpg);
     opacity: 0.7;
     border-radius: 50%;
     border: white;
@@ -365,6 +375,10 @@ p {
         height: 35px;
 
     }
+    .top img{
+        width: 85px;
+    }
+    
 
     /**dark mode **/
     .dark-mode .active .nav-ul {
@@ -505,6 +519,7 @@ p {
         flex-direction: column;
         width: 100%;
         align-items: center;
+        justify-content: center;
     }
 
     .video1 {
@@ -515,7 +530,11 @@ p {
     .audio {
         width: 100%;
     }
-
+    .element1, .element2, .element3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     /**navbar**/
     .navbar {
         height: 30px;
@@ -553,15 +572,14 @@ p {
         background-image: center;
     }
 
-    .mode {
+    .mode img{
         height: 20px;
         width: 23px;
-        background-image: url(/assets/images/dark.jpg);
         background-size: contain;
         margin-left: 10px;
         opacity: 0.5;
     }
-
+    
     .bar {
         width: 30px;
         height: 4px;

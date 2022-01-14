@@ -52,7 +52,7 @@ ul {
 
 /*background body*/
 .index {
-    background-image: url(./assets/images/Arbre\ magique.jpg);
+    background-image: url(./assets/images/Arbre-magique.jpg);
     background-size: cover;
     background-position: 0% 65%;
     font-size: var(--font-size);
@@ -97,21 +97,24 @@ h1 {
     align-items: center;
 }
 
-.logo img {
+.logo img, .mode {
     height: 50px;
 }
 
 .mode {
+    display: flex;
+    align-items: center;
+
+}
+.mode img {
     height: 28px;
     width: 31px;
-    background-image: url(/assets/images/dark.jpg);
     opacity: 0.7;
     border-radius: 50%;
     border: white;
     background-size: contain;
     margin-left: 8px;
 }
-
 
 .navbar {
     display: flex;
@@ -396,10 +399,9 @@ p {
         background-image: center;
     }
 
-    .mode {
+    .mode img{
         height: 20px;
         width: 23px;
-        background-image: url(/assets/images/dark.jpg);
         background-size: contain;
         margin-left: 10px;
         opacity: 0.5;
