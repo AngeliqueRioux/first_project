@@ -615,7 +615,6 @@ img {
 
     .logo img {
         height: 40px;
-        background-image: center;
     }
 
     .mode img{
@@ -625,7 +624,7 @@ img {
         margin-left: 10px;
         opacity: 0.5;
     }
-    
+
     .bar {
         width: 30px;
         height: 4px;

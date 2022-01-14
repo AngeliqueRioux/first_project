@@ -68,19 +68,22 @@ ul {
     height: 350px;
 
 }
-.titre h1{
+
+.titre h1 {
     text-align: center;
     font-family: var(--fonth1);
     font-size: 7vw;
     color: rgb(33, 37, 243);
     text-shadow: 1px 2px 2px rgb(34, 32, 32), 0 0 2em rgb(218, 50, 78), 0 0 0.2em rgb(43, 49, 45);
 }
-h2{ 
+
+h2 {
     text-align: center;
     font-size: 3vw;
     font-family: var(--fonth3);
 }
-.monde{
+
+.monde {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,11 +94,13 @@ h2{
     margin: 0;
     margin-bottom: 1.5%;
 }
+
 .monde img, .newImage {
 
     max-height: 500px;
     max-width: auto;
 }
+
 .monde1 {
     width: 100%;
     height: auto;
@@ -103,12 +108,14 @@ h2{
     flex-direction: row;
     justify-content: center;
 }
+
 .monde1 img {
     width: calc(100% - 10px);
     margin: 0px 5px 1.5% 5px;
     max-height: 500px;
 }
-.mondeLivre{
+
+.mondeLivre {
     margin: 2%;
     display: flex;
     flex-direction: row;
@@ -116,14 +123,17 @@ h2{
     height: auto;
     width: 96%;
 }
-.imgMonde{
+
+.imgMonde {
     width: 50%;
 }
+
 .imgMonde img, .livres img {
     width: 100%;
     height: auto;
 }
-.livres{
+
+.livres {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,15 +141,16 @@ h2{
     height: auto;
     width: 50%;
     margin-left: 2%;
- }
+}
 
- .video{
-     max-width: 1200px;
-     width: 100%;
-     margin: auto;
-     display: flex;
-     justify-content: center;
- }
+.video {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
 /** dark-mode **/
 
 .dark-mode .navbar {
@@ -168,6 +179,7 @@ h2{
     align-items: center;
 
 }
+
 .mode img {
     height: 28px;
     width: 31px;
@@ -222,28 +234,34 @@ h2{
         width: 100%;
         overflow-x: hidden;
     }
+
     .titre {
         background-image: url(./assets/images/ville-futuriste.jpg);
-    
+
         background-size: cover;
         width: auto;
         height: 200px;
-    
+
     }
-    .titre h1{
+
+    .titre h1 {
         font-size: 3em;
     }
+
     h2 {
         font-size: 2em;
     }
-    .video{
+
+    .video {
         width: 100%;
     }
+
     .monde img, .newImage {
 
         height: auto;
         width: 100%;
     }
+
     /**burger**/
     .nav-ul {
         display: none;
@@ -366,30 +384,35 @@ h2{
 
         margin-bottom: 1.5%;
     }
-    .monde img{
+
+    .monde img {
         width: 100%;
         height: auto;
     }
+
     .titre {
         background-image: url(./assets/images/ville-futuriste-mobile.jpg);
-    
+
         background-size: cover;
         width: auto;
         height: 116px;
-    
+
     }
-    h2{
+
+    h2 {
         font-size: 1.5em;
     }
-    .titre h1{
+
+    .titre h1 {
         font-size: 2em;
         color: rgb(75, 75, 241);
         text-shadow: none;
     }
-    .video{
+
+    .video {
         width: 100%;
     }
-    
+
     /**navbar**/
     .navbar {
         height: 30px;
@@ -424,10 +447,9 @@ h2{
 
     .logo img {
         height: 40px;
-        background-image: center;
     }
 
-    .mode img{
+    .mode img {
         height: 20px;
         width: 23px;
         background-size: contain;
